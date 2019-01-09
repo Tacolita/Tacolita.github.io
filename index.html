@@ -1,0 +1,162 @@
+<html>
+<head>
+  <link rel="icon" href="pictures/favicon.png" type="image" sizes="16x16">
+</head>
+<head>
+	<title>Labello</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+	<meta name="description" content="Website for Labello brand">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css'>
+
+<body>
+
+<div id="logo">
+<a href="index.html" title="Logo"><img src="pictures/labello.png"></a>
+</div>  
+
+<div class="nav" id="centered_nav">
+<a href="products.html" title="Products">PRODUCTS</a>
+<a href="social" title="Social">SOCIAL</a>
+<a href="magazine" title="Magazine">MAGAZINE</a>
+<a href="about" title="About">ABOUT</a>
+<a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+ <div class="mySlides">
+    <img src="pictures/landing.png" style="width:100%">
+    </div>
+ 
+  <div class="mySlides">
+    <img src="pictures/landing2.png" style="width:100%">
+  </div>
+    
+<h1>#PINKLICIOUS</h1>
+ <p>
+Bold, sweet & pink! Pink is your superpower. Pink is delicious.</p>
+
+ 
+  <div>
+     <div class="grid-container1">
+  <div class="grid-item"><img class="shake"src="pictures/1.jpg" alt="1" ></div>
+  <div class="grid-item"><img class="shake" src="pictures/2.jpg" alt="1" ></div>
+  <div class="grid-item"><img class="shake"src="pictures/3.jpg" alt="1" ></div>
+</div>
+  </div>
+   
+   <div>
+       <a href="products.html"><button class="button button1">EXPLORE</button></a>
+    </div>
+    
+     
+<div class="grid-container">
+  <div class="item"><img class="gif" src="pictures/LABELLINO.gif" ></div>
+    <div class="item"><a href="products.html#products2"><h2>LABELLINO</h2></a></div>
+    <div class="item"><a href="products.html#products3"><h2>LIP CRAYONS</h2></a></div>
+  <div class="item"><img class="gif" src="pictures/CRAYON.gif"></div>
+</div>
+   
+   <section id="newsletter">
+  <div class="containeris">
+    <h1>Subscribe To Our Newsletter</h1>
+    <form action="">
+      <input type="email" placeholder="Enter Email...">
+      <button type="submit" class="button_1">SUBSCRIBE</button>
+      </form>
+  </div>
+</section>
+   
+   <section class="soc">
+    <center> <div class="insta"><h1>#LABELLO</h1>
+    <p>
+From your lips to our eyes, we want to see all the ways you love Labello.
+Please share it with us using #Labello.
+</p></div></center>
+    <a href="https://www.instagram.com/labello/"><button class="btn2"><img src="pictures/insta.png"></button></a>
+   
+  <div class="carousel-wrap">
+    <div class="owl-carousel">
+      <div class="item"><img src="pictures/insta/in1.jpg"></div>
+      <div class="item"><img src="pictures/insta/in2.jpg"></div>
+      <div class="item"><img src="pictures/insta/in3.jpg"></div>
+      <div class="item"><img src="pictures/insta/in4.jpg"></div>
+      <div class="item"><img src="pictures/insta/in5.jpg"></div>
+      <div class="item"><img src="pictures/insta/in6.jpg"></div>
+      <div class="item"><img src="pictures/insta/in7.jpg"></div>
+      <div class="item"><img src="pictures/insta/in8.jpg"></div>
+      <div class="item"><img src="pictures/insta/in9.jpg"></div>
+      <div class="item"><img src="pictures/insta/in10.jpg"></div>
+      <div class="item"><img src="pictures/insta/in11.jpg"></div>
+    </div>
+  </div>
+    </section>
+    <footer>
+  <div class="container">
+   <a href="index.html"> HOME</a>
+   <a href=""> CONTACT</a>
+   <a href=""> IMPRINT</a>
+   
+  </div>
+</footer>
+    
+   <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+      
+    function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+   $('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [
+    "<i class='fa fa-caret-left'></i>",
+    "<i class='fa fa-caret-right'></i>"
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 4
+    }
+  }
+})
+        </script>
+        
+        
+        
+        
+    
+   </body>
+</html>
